@@ -69,10 +69,19 @@
             <div id="res8">Sua resposta está:</div>
         </section>
 
-        <a href="adicao.html"><button class="nivel2">nivel 2</button></a>
+        <a href="adicao.html"><button class="nivel2" onclick="liberar()">Nível 2</button></a>
     </main>
 
     <script>
+
+        function liberar() {
+            if(result1 === 0) {
+                res1.innerHTML = `bloqueado`
+            }
+        }
+
+
+
         function verificar1(){  /* 12 - 2 */
             var result1 = document.getElementById('num1').value
             var res1 = document.getElementById('res1')

@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(146, 228, 220);
+    background-color: #92e4dc;
 }
 main{
-    background-color: rgba(250, 235, 215, 0.5);
+    background-color: #faebd780;
     border-radius: 20px;
     height: 1180px;
 }
@@ -26,13 +26,12 @@ h2{
 }
 
 section{
-    min-width: 375px;
+    
     margin: auto;
     margin-top: 0px;
     text-align: center;
     background-color: #ec9d80;
     border-radius: 20px;
-    width: 400px;
     height: 112px;
     position: relative;
     box-shadow: 1px 2px 3px black;
@@ -85,7 +84,7 @@ div{
 .nivel2 {  /*botao nivel 2 */
     text-align: center;
     position: relative;
-    left: 380px;
+    left: 280px;
     top: 10px;
     width: 55px;
     height: 30px;
