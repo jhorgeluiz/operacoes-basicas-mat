@@ -84,13 +84,15 @@
             var r1 = document.getElementById('num1').value
             var r2 = document.getElementById('num2').value
             var r3 = document.getElementById('num3').value
-            var fals = disabled
+           
             
 
             if (r1 === 'correta' && r2 === 'correta' && r3 === 'correta'){
-                document.getElementById('botao').disabled = fals;
+                document.getElementById('botao')
+                return disabled = false
             } else {
-                document.getElementById('botao').disabled = true;
+                document.getElementById('botao')
+                return disabled = true
             }
                 
             
