@@ -69,30 +69,36 @@
             <div id="res8">Sua resposta está:</div>
         </section>
 
-        <a href="adicao.html"><button id="botao" class="nivel2" onclick="verificarResposta()"disabled>Nível 2</button></a>
+        <a href="adicao.html"><button id="botao" class="nivel2" onclick="alert('botao clicado')"disabled>Nível 2</button></a>
 
-        <script>
-            document.getElementById('num1').addEventListener('input', verificarResposta)
-            document.getElementById('num2').addEventListener('input', verificarResposta)
-            document.getElementById('num3').addEventListener('input', verificarResposta)
-        </script>
     </main>
 
     <script>
+        document.getElementById('num1').addEventListener('input', verificarResposta)
+        document.getElementById('num2').addEventListener('input', verificarResposta)
+        document.getElementById('num3').addEventListener('input', verificarResposta)
+        document.getElementById('num4').addEventListener('input', verificarResposta)
+        document.getElementById('num5').addEventListener('input', verificarResposta)
+        document.getElementById('num6').addEventListener('input', verificarResposta)
+        document.getElementById('num7').addEventListener('input', verificarResposta)
+        document.getElementById('num8').addEventListener('input', verificarResposta)
 
         function verificarResposta() {
             var r1 = document.getElementById('num1').value
             var r2 = document.getElementById('num2').value
             var r3 = document.getElementById('num3').value
-           
+            var r4 = document.getElementById('num4').value
+            var r5 = document.getElementById('num5').value
+            var r6 = document.getElementById('num6').value
+            var r7 = document.getElementById('num7').value
+            var r8 = document.getElementById('num8').value
+            
             
 
-            if (r1 === 'correta' && r2 === 'correta' && r3 === 'correta'){
-                document.getElementById('botao')
-                return disabled = false
+            if (r1 === '10' && r2 === '10' && r3 === '10' &&  r4 === '2' && r5 === '34' && r6 === '38' && r7 === '46' && r8 === '45'){
+                document.getElementById('botao').disabled = false
             } else {
-                document.getElementById('botao')
-                return disabled = true
+                document.getElementById('botao').disabled = true
             }
                 
             
