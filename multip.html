@@ -69,10 +69,38 @@
             <div id="res8">Sua resposta está:</div>
         </section>
 
-        <a href="divisao.html"><button class="nivel2">Nível 4</button></a>
+        <a href="divisao.html"><button id="botao" class="nivel2" onclick="alert('Parabens!!')"disabled>Nível 4</button></a>
     </main>
 
     <script>
+        document.getElementById('num1').addEventListener('input', verificarResposta)
+        document.getElementById('num2').addEventListener('input', verificarResposta)
+        document.getElementById('num3').addEventListener('input', verificarResposta)
+        document.getElementById('num4').addEventListener('input', verificarResposta)
+        document.getElementById('num5').addEventListener('input', verificarResposta)
+        document.getElementById('num6').addEventListener('input', verificarResposta)
+        document.getElementById('num7').addEventListener('input', verificarResposta)
+        document.getElementById('num8').addEventListener('input', verificarResposta)
+
+        function verificarResposta() {
+            var r1 = document.getElementById('num1').value
+            var r2 = document.getElementById('num2').value
+            var r3 = document.getElementById('num3').value
+            var r4 = document.getElementById('num4').value
+            var r5 = document.getElementById('num5').value
+            var r6 = document.getElementById('num6').value
+            var r7 = document.getElementById('num7').value
+            var r8 = document.getElementById('num8').value
+            
+            if (r1 === '4' && r2 === '9' && r3 === '16' &&  r4 === '25' && r5 === '36' && r6 === '21' && r7 === '32' && r8 === '45'){
+                document.getElementById('botao').disabled = false
+            } else {
+                document.getElementById('botao').disabled = true
+            }
+        }
+
+
+
         function verificar1(){  /* 2 x 2 */
             var result1 = document.getElementById('num1').value
             var res1 = document.getElementById('res1')
