@@ -3,13 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 
-
+/* ====================TELA PEQUENA==================== */
 
 @media screen and (min-width: 375px) and (max-width: 768px){
 
     body{
         background-color: #92e4dc;
-        
     }
 
     main{
@@ -21,15 +20,11 @@
         height: 350px;
     }
 
-    
-
     .divtitulo {
         font-family: 'space grotesk';
         text-align: center;
-        
         display: flex;
         justify-content: center;
-        
         margin-top: 20px;
     } 
     .divbotao {
@@ -40,7 +35,6 @@
 
     .divsubtitulo {
         font-family: 'space grotesk';
-        
         text-align: center;
         display: flex;
         justify-content: center;
@@ -56,48 +50,211 @@
         border-radius: 5px;
         padding: 15px 60px;
         font-size: 16px;
-      }
+    }
       
-      .button::after, .button::before {
+    .button::after, .button::before {
         position: absolute;
         content: "";
         width: 0;
         height: 0;
         transition: .5s;
-      }
+    }
       
-      button::after {
+    button::after {
         top: -3px;
         left: -3px;
         border-top: 3px solid transparent;
         border-left: 3px solid transparent;
-      }
-      
-      button::before {
+    }
+    
+    button::before {
         bottom: -3px;
         right: -3px;
         border-bottom: 3px solid transparent;
         border-right: 3px solid transparent;
-      }
-      
-      button:hover {
+    }
+    
+    button:hover {
         color: #0668C9;
         cursor: pointer;
-      }
-      
-      button:hover::after,
-      button:hover::before {
+    }
+    
+    button:hover::after,
+    button:hover::before {
         width: calc(50% + 3px);
         height: calc(50% + 3px);
         border-color: #0668C9;
-      }
+    }
+}
 
-    
+/* ====================TELA MEDIA==================== */
 
-   
-    
-   
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
+    body{
+        background-color: #92e4dc;
+    }
+
+    main{
+        background-color: #ec9d80;
+        box-shadow: 1px 1px 5px;
+        position: relative;
+        top: 120px;
+        border-radius: 20px;
+        height: 350px;
+    }
+
+    .divtitulo {
+        font-family: 'space grotesk';
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    } 
+    .divbotao {
+        font-family: 'space grotesk';
+        display: flex;
+        justify-content: center; 
+    }
+
+    .divsubtitulo {
+        font-family: 'space grotesk';
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
     
+    .button {
+        background-color: #92e4dc;
+        font-weight: 600;
+        display: inline-block;
+        position: relative;
+        border: 3px solid #92e4dc;
+        box-shadow: 1px 1px 5px;
+        border-radius: 5px;
+        padding: 15px 60px;
+        font-size: 16px;
+    }
+      
+    .button::after, .button::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        transition: .5s;
+    }
+      
+    button::after {
+        top: -3px;
+        left: -3px;
+        border-top: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+    
+    button::before {
+        bottom: -3px;
+        right: -3px;
+        border-bottom: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+    
+    button:hover {
+        color: #0668C9;
+        cursor: pointer;
+    }
+    
+    button:hover::after,
+    button:hover::before {
+        width: calc(50% + 3px);
+        height: calc(50% + 3px);
+        border-color: #0668C9;
+    }
+
+}
+
+/* ====================TELA GRANDE==================== */
+
+@media screen and (min-width: 992px) {
+
+    body{
+        background-color: #92e4dc;
+    }
+
+    main{
+        margin: auto;
+        background-color: #ec9d80;
+        box-shadow: 1px 1px 5px;
+        position: relative;
+        top: 120px;
+        border-radius: 20px;
+        width: 800px;
+        height: 350px;
+    }
+
+    .divtitulo {
+        font-family: 'space grotesk';
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    } 
+    .divbotao {
+        font-family: 'space grotesk';
+        display: flex;
+        justify-content: center; 
+    }
+
+    .divsubtitulo {
+        font-family: 'space grotesk';
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .button {
+        background-color: #92e4dc;
+        font-weight: 600;
+        display: inline-block;
+        position: relative;
+        border: 3px solid #92e4dc;
+        box-shadow: 1px 1px 5px;
+        border-radius: 5px;
+        padding: 15px 60px;
+        font-size: 16px;
+    }
+      
+    .button::after, .button::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        transition: .5s;
+    }
+      
+    button::after {
+        top: -3px;
+        left: -3px;
+        border-top: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+    
+    button::before {
+        bottom: -3px;
+        right: -3px;
+        border-bottom: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+    
+    button:hover {
+        color: #0668C9;
+        cursor: pointer;
+    }
+    
+    button:hover::after,
+    button:hover::before {
+        width: calc(50% + 3px);
+        height: calc(50% + 3px);
+        border-color: #0668C9;
+    }
 
 }
