@@ -96,11 +96,13 @@
     }
 
     main{
+        margin: auto;
         background-color: #ec9d80;
         box-shadow: 1px 1px 5px;
         position: relative;
-        top: 120px;
+        top: 20px;
         border-radius: 20px;
+        width: 600px;
         height: 350px;
     }
 
