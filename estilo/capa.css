@@ -7,8 +7,16 @@
 
 @media screen and (min-width: 375px) and (max-width: 768px){
 
+    html {
+        height: 100%;
+    }
+
     body{
         background-color: #92e4dc;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
     }
 
     main{
@@ -85,6 +93,14 @@
         height: calc(50% + 3px);
         border-color: #0668C9;
     }
+
+    footer {
+        font-family: 'space grotesk';
+        margin-top: auto;
+        text-align: center;
+        box-shadow: 1px 1px 5px;
+    }
+    
 }
 
 /* ====================TELA MEDIA==================== */
