@@ -107,8 +107,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    html {
+        height: 100%;
+    }
+
     body{
         background-color: #92e4dc;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
     }
 
     main{
@@ -188,14 +196,29 @@
         border-color: #0668C9;
     }
 
+    footer {
+        font-family: 'space grotesk';
+        margin-top: auto;
+        text-align: center;
+        box-shadow: 1px 1px 5px;
+    }
+
 }
 
 /* ====================TELA GRANDE==================== */
 
 @media screen and (min-width: 992px) {
 
+    html {
+        height: 100%;
+    }
+
     body{
         background-color: #92e4dc;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
     }
 
     main{
@@ -203,7 +226,7 @@
         background-color: #ec9d80;
         box-shadow: 1px 1px 5px;
         position: relative;
-        top: 120px;
+        top: 20px;
         border-radius: 20px;
         width: 800px;
         height: 350px;
@@ -273,6 +296,13 @@
         width: calc(50% + 3px);
         height: calc(50% + 3px);
         border-color: #0668C9;
+    }
+
+    footer {
+        font-family: 'space grotesk';
+        margin-top: auto;
+        text-align: center;
+        box-shadow: 1px 1px 5px;
     }
 
 }
